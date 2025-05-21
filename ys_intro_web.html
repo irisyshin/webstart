@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신윤서 | Data Analyst Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f3f4f6;
+      --text-color: #111827;
+      --muted-color: #6b7280;
+      --primary: #002c8a;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.05);
+    }
+
+    body.dark-mode {
+      --bg-color: #0f172a;
+      --text-color: #f1f5f9;
+      --muted-color: #94a3b8;
+      --primary: #b9d9ff;
+      --card-bg: #1e293b;
+      --shadow: rgba(255, 255, 255, 0.05);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--card-bg);
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 6px var(--shadow);
+      max-width: 800px;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 1.5rem auto;
+    }
+
+    .topnav a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+    }
+
+    .topnav a:hover {
+      color: var(--primary);
+    }
+
+    .outer {
+      display: flex;
+      justify-content: center;
+      padding: 0 1.5rem 3rem;
+    }
+
+    .card-wrapper {
+      background-color: var(--card-bg);
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px var(--shadow);
+      max-width: 800px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0.5rem 0;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: var(--muted-color);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      font-weight: 650;
+      margin-bottom: 1.25rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.3rem;
+    }
+
+    section p {
+      line-height: 1.8;
+    }
+
+    .card {
+      background: var(--bg-color);
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .contact a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .toggle-mode {
+      background: none;
+      border: 1px solid var(--muted-color);
+      color: var(--muted-color);
+      border-radius: 5px;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+     .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      
+    }
+
+    .bar {
+    display: inline-block;
+    width: 6.5px;                /* 막대 두께 */
+    height: 2rem;            /* 막대 높이 */
+    background-color: var(--primary); /* 색상 통일 */
+    margin-right: 0.6rem;      /* 글자와 간격 */
+    vertical-align: middle;
+    border-radius: 2px;        /* 둥근 느낌 (선택) */
+    }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <div>
+      |<a href="#about">About</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="toggle-mode" onclick="toggleDarkMode()">다크 모드</button>
+  </div>
+
+  <div class="outer">
+    <div class="card-wrapper">
+      <header>
+        <h1> 신윤서 | Data Analyst Portfolio</h1>
+        <p>데이터로 사람과 사회를 이해하는 분석가</p>
+        <br>
+      </header>
+
+      <section id="about">
+        <h2><span class="bar"></span>About</h2>
+        <p>
+          안녕하세요! 데이터사이언스를 전공 중인 대학생입니다.<br>
+          Python과 R을 활용해 데이터 분석, 시각화, 통계 기법을 학습하고 있으며, 머신러닝 기초 모델도 함께 익히고 있습니다.
+          그동안의 프로젝트 참여를 통해 데이터를 정리하고 의미 있는 인사이트를 도출하는 과정을 경험해 왔습니다.<br>
+          저는 분석 결과를 <strong>명확하고 효율적으로 전달하는 것</strong>을 중요하게 생각합니다.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2><span class="bar"></span>Projects</h2>
+        <div class="card">
+          <h3>🏝 The Islands – 가상 인구 실험 분석</h3>
+          <p><strong>도구:</strong> R (dplyr, ggplot2)</p>
+          <p><strong>내용:</strong> 무작위 샘플링을 통해 가상 인구의 키/나이와 균형 능력 간 관계 분석</p>
+          <p><strong>기여:</strong> 실험 설계, 데이터 전처리 및 시각화, 통계 해석 수행</p>
+        </div>
+        <div class="card">
+          <h3>🧬 REDMANE – 멀티오믹스 데이터 등록 자동화</h3>
+          <p><strong>도구:</strong> Python, RO-Crate, FastAPI</p>
+          <p><strong>내용:</strong> 생의학 연구 데이터를 표준화하고 메타데이터 기반 검색이 가능한 시스템 설계</p>
+          <p><strong>기여:</strong> 데이터 등록 파이프라인 기획 및 인증 구조 설계 참여</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2><span class="bar"></span>Contact</h2>
+        <p><a href="https://mail.google.com/mail/?view=cm&to=howirisliving@gmail.com&subject=Hello&body=Hi!" target="_blank">📧 Email</a></p>
+        <p><a href="" target="_blank">🔗 LinkedIn </a></p>
+        <p><a href="https://github.com/irisyshin" target="_blank">🔗 GitHub</a></p>
+        <p><a href="https://velog.io/@iriseverywhere/posts" target="_blank">📝 Blog</a></p>
+      </section>
+    </div>
+  </div>
+  
+  <a href="#top" class="back-to-top" title="맨 위로">^</a>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
