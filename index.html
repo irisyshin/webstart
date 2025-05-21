@@ -172,7 +172,7 @@
       border-radius: 2px;        /* 둥근 느낌 (선택) */
     }
 
-
+    /*본문 헤딩 커졌다 작아지는 모션*/
     @keyframes pulse {
       0% { transform: scale(1); }
       50% { transform: scale(1.15); }
@@ -212,8 +212,33 @@
     }
 
     .front {
-      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 1rem;
       font-weight: 700;
+      text-align: left;
+      padding: 0.5rem;
+    }
+
+    .profile-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .title-text .name {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .title-text .role {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--text-color);
+      opacity: 0.8;
     }
 
     .back {
@@ -226,6 +251,19 @@
       max-width: 70%;
       line-height: 1.8;
       margin-bottom: 1.2rem; /* 문단 간 여백 */
+    }
+
+    .title-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profile-card {
+      background-color: var(--card-bg);
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
@@ -243,10 +281,20 @@
 
   <div class="outer">
     <div class="card-wrapper">
-      <div class="flip-container">
-        <div class="flipper">
-          <div class="front">신윤서 | Data Analyst Portfolio</div>
-          <div class="back">데이터로 사람과 사회를 이해하는 분석가</div>
+      <div class="profile-card">
+        <div class="flip-container">
+          <div class="flipper">
+            <div class="front">
+              <img src="./img/black.png" alt="Profile" class="profile-img" />
+              <div class="title-text">
+                <div class="name">신윤서</div>
+                <div class="role">Data Analyst Portfolio</div>
+              </div>
+            </div>
+            <div class="back">
+              데이터로 사람과 사회를 이해하는 분석가
+            </div>
+          </div>
         </div>
       </div>
 
