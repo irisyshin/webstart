@@ -221,8 +221,16 @@
   font-size: 1rem;
   color: var(--muted-color);
 }
+
+section p {
+  max-width: 70%;
+  line-height: 1.8;
+  margin-bottom: 1.2rem; /* 문단 간 여백 */
+}
   </style>
 </head>
+
+
 <body>
   <div class="topnav">
     <div>
@@ -243,11 +251,17 @@
       </div>
 
       <section id="about">
-        <h2><span class="bar"></span>About</h2>
+        <h2 id="about-title"><span class="bar"></span>About</h2>
         <p>
-          안녕하세요! 데이터사이언스를 전공 중인 대학생입니다.<br>
+          안녕하세요! 데이터사이언스를 전공 중인 대학생입니다.
+        </p>
+        <p>
           Python과 R을 활용해 데이터 분석, 시각화, 통계 기법을 학습하고 있으며, 머신러닝 기초 모델도 함께 익히고 있습니다.
-          그동안의 프로젝트 참여를 통해 데이터를 정리하고 의미 있는 인사이트를 도출하는 과정을 경험해 왔습니다.<br>
+        </p>
+        <p>
+          그동안의 프로젝트 참여를 통해 데이터를 정리하고 의미 있는 인사이트를 도출하는 과정을 경험해 왔습니다.
+        </p>
+        <p>
           저는 분석 결과를 <strong>명확하고 효율적으로 전달하는 것</strong>을 중요하게 생각합니다.
         </p>
       </section>
